@@ -27,11 +27,3 @@ The input file must be a JSON file containing a list of people with the followin
   }
 ]
 
-'''
-
-## Outputs
-The application generates three separate JSON output files:
-
-training_count.json: Contains the count of people who completed each training.
-fiscal_year_results.json: Contains the list of people who completed specified trainings in a given fiscal year.
-expired_trainings_grouped.json: Contains a list of people with expired or soon-to-expire trainings as of a specified date, grouped by person.
