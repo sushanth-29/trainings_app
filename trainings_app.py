@@ -77,8 +77,8 @@ def find_expired_trainings(data, check_date):
 
 training_count = find_completed_trainings_count(data)
 print("Training Count:", json.dumps(training_count, indent=2))
-# with open('trainings_count.json', 'w') as f:
-#     json.dump(training_count, f, indent=2)
+with open('trainings_count.json', 'w') as f:
+    json.dump(training_count, f, indent=2)
 
 
 # Output 2: Trainings completed in Fiscal Year 2024
@@ -88,8 +88,8 @@ fiscal_year_results = find_completed_trainings_by_fiscal_year(
     data, trainings, 2024)
 print("Fiscal Year 2024 Results:", json.dumps(fiscal_year_results, indent=2))
 
-# with open('completed_trainings_in_fiscal_year.json', 'w') as f:
-#     json.dump(fiscal_year_results, f, indent=2)
+with open('completed_trainings_in_fiscal_year.json', 'w') as f:
+    json.dump(fiscal_year_results, f, indent=2)
 
 
 # Output 3: Expired or soon-to-expire trainings as of Oct 1, 2023
@@ -97,5 +97,5 @@ expired_trainings = find_expired_trainings(data, "10/01/2023")
 print("Expired/Expires Soon Trainings:",
       json.dumps(expired_trainings, indent=2))
 
-# with open('expired_trainings.json', 'w') as f:
-#     json.dump(expired_trainings, f, indent=2)
+with open('expired_trainings.json', 'w') as f:
+    json.dump(expired_trainings, f, indent=2)
